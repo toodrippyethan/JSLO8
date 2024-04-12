@@ -4,11 +4,14 @@
 let bankBranchInstance = null;
 
 // 2. Define a class called `BankBranch` for managing branch information.
+
 class BankBranch {
+
   // 3. In the 'BankBranch' class:
   //    - Create a constructor that takes `branchInfo` as a parameter.
   //    - Inside the constructor, check if the `bankBranchInstance` variable is null (indicating no instance exists).
   //    - If `bankBranchInstance` is null, create a new instance with the provided `branchInfo` and assign it to `bankBranchInstance`.
+ 
   constructor(branchInfo) {
     if (!bankBranchInstance) {
       bankBranchInstance = this;
@@ -31,10 +34,10 @@ class BankBranch {
 const branchA = new BankBranch("Branch A Info");
 const branchB = new BankBranch("Branch B Info");
 
-console.log(branchA.getBranchInfo()); // Output: "Branch A Info"
-console.log(branchB.getBranchInfo()); // Output: "Branch A Info" (Same as branchA because of Singleton pattern)
+console.log(branchA.getBranchInfo()); // The output will be 'Branch A Info'
+console.log(branchB.getBranchInfo()); // The output will be 'Branch A Info' Same as branchA because of Singleton pattern
 
-console.log(branchA === branchB); // Output: true (Both are referring to the same instance)
+console.log(branchA === branchB); // The ouptu will then say true (Both are referring to the same instance)
 
 // NOTES:
 // This example demonstrates the Singleton pattern by creating a single instance of the `BankBranch` class.
