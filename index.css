@@ -3,25 +3,35 @@ body, p {
     margin: 0;
     padding: 0;
     background-color: black;
-    
+    color: white;
 }
+ 
+p {
+  text-align: right;
+  padding-right: 30%;
+  background-color: transparent;
 
+}
 body {
     background-image: url('manager.gif');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Optional: Keeps the background fixed */
+    height: 100vh; /* Set the height of the body to the full viewport height */
+    overflow: hidden; /* Hide any content that overflows the viewport */
 }
+
 
 
 /* Style the h1 element */
 h1 {
     background: white;
     background-clip: text;
-    color: transparent;
+    color:white;
     font-weight: bold;
     font-size: 20px;
-    text-align: center;
+    text-align: right;
+    padding-right: 30%;
 
 }
 
